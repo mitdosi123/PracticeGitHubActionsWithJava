@@ -35,7 +35,7 @@ jobs:
           tag-_with_sha: true
           add_git_labels: true
           always_pull: true
-		      tags: mitdosi8919/practicedocker:latest
+          tags: mitdosi8919/practicedocker:latest
     
   deploy_to_azure:
       name: deploy to azure
