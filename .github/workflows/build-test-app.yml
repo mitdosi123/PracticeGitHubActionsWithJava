@@ -35,7 +35,6 @@ jobs:
           tag-_with_sha: true
           add_git_labels: true
           always_pull: true
-          tags: mitdosi8919/practicedocker:latest
     
   deploy_to_azure:
       name: deploy to azure
@@ -57,5 +56,5 @@ jobs:
             password: ${{ secrets.DOCKER_PASSWORD }}
         - name: Run docker commands
           run: |
-            sudo docker pull mitdosi8919/practicedocker:latest
-            sudo docker run -dit -p 80:3010 mitdosi8919/practicedocker:latest
+            sudo docker pull mitdosi8919/practicedocker:main
+            sudo docker run -dit -p 80:3010 mitdosi8919/practicedocker:main
